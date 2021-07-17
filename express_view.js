@@ -22,7 +22,16 @@ app.get('/registration', function (req, res) {
 })
 
 app.get('/login', function (req, res) {
-    res.sendFile(__dirname + '/' + "login.html");
+    res.render('login');
+    
+})
+app.get('/registration', function (req, res) {
+    res.render('registration');
+    
+})
+app.get('/forgetpass', function (req, res) {
+    res.render('forgetpass');
+    
 })
 
 app.get('/form', function (req, res) {
